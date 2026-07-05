@@ -1,0 +1,535 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>디토글로우 - 모바일 뷰티 앱</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="디토글로우 홈">
+        <span class="brand-mark">D</span>
+        <span>디토글로우</span>
+      </a>
+      <nav class="nav-links" aria-label="주요 메뉴">
+        <a href="#expert">추천 상품</a>
+        <a href="#feed">소통 피드</a>
+        <a href="#ranking">랭킹</a>
+        <a href="#checkout">바로 구매</a>
+      </nav>
+      <button class="icon-button" type="button" aria-label="검색 열기" data-scroll="#expert">
+        <span class="icon-search"></span>
+      </button>
+    </header>
+
+    <main>
+      <section class="app-hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">요즘 뜨는 뷰티 디토템</p>
+          <h1 id="hero-title">인플루언서가 쓰고, 내 취향과 맞는 사람들이 산 뷰티템.</h1>
+          <p class="hero-text">
+            쿠션, 립, 마스카라, 헤어오일, 스킨케어까지. 전문가 추천과 인플루언서 리뷰,
+            유저 댓글 반응을 보고 바로 구매해보세요.
+          </p>
+          <form class="search-panel" role="search">
+            <label class="sr-only" for="beauty-search">상품, 피부 고민, 인플루언서 검색</label>
+            <span class="icon-search"></span>
+            <input id="beauty-search" type="search" placeholder="쿠션, 틴트, 마스카라, 헤어오일 검색" />
+            <button type="submit">검색</button>
+          </form>
+          <div class="quick-tabs" aria-label="인기 필터">
+            <button class="chip selected" type="button">인플루언서 픽</button>
+            <button class="chip" type="button">색조 인기</button>
+            <button class="chip" type="button">3만원 이하</button>
+            <button class="chip" type="button">댓글 많은템</button>
+          </div>
+        </div>
+
+        <div class="phone-shell" aria-label="모바일 뷰티 앱 미리보기">
+          <div class="phone-screen">
+            <div class="status-row">
+              <span>9:41</span>
+              <span class="status-dots"></span>
+            </div>
+            <div class="mobile-title">
+              <div>
+                <span>오늘의 디토템</span>
+                <h2>글로우 레이더</h2>
+              </div>
+              <button class="mini-icon" type="button" aria-label="필터 열기"></button>
+            </div>
+            <article class="mobile-product">
+              <div class="product-visual premium cushion"></div>
+              <div>
+                <span class="tag hot">하루 PICK</span>
+                <h3>세미매트 스킨 쿠션</h3>
+                <p>복합성 피부 유저 디토 점수 96점</p>
+                <button class="buy-now" type="button" data-product="세미매트 스킨 쿠션" data-price="32,000원">
+                  바로 구매
+                </button>
+              </div>
+            </article>
+            <div class="mobile-feed-card">
+              <div class="feed-author">
+                <span class="avatar expert">하루</span>
+                <div>
+                  <strong>하루뷰티</strong>
+                  <p>팔로워 48.2만 · 베이스 메이크업</p>
+                </div>
+              </div>
+              <p>마스크에 덜 묻고 오후 무너짐이 예쁜 쿠션이에요. 지금 댓글 반응도 좋아요.</p>
+              <div class="feed-actions">
+                <span>좋아요 1.8만</span>
+                <span>댓글 642</span>
+              </div>
+            </div>
+            <div class="mobile-nav" aria-hidden="true">
+              <span class="active"></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="expert" class="content-section expert-section" aria-labelledby="expert-title">
+        <div class="section-heading">
+          <p class="eyebrow">추천 상품</p>
+          <h2 id="expert-title">스킨케어부터 색조까지, 지금 많이 따라 사는 디토템</h2>
+          <p>
+            인기 인플루언서의 사용 후기, 전문가 코멘트, 유저 댓글 반응을 함께 보여줘
+            실제 구매 결정에 필요한 맥락을 빠르게 확인할 수 있습니다.
+          </p>
+        </div>
+        <div class="expert-grid">
+          <article class="product-card featured">
+            <div class="product-media">
+              <div class="product-visual premium cushion"></div>
+              <span class="badge coral">하루뷰티 추천</span>
+            </div>
+            <div class="product-body">
+              <span class="tag">베이스 메이크업</span>
+              <h3>세미매트 스킨 쿠션</h3>
+              <p>들뜸은 적고 보송한 마무리감이 오래간다는 후기가 많은 데일리 쿠션입니다.</p>
+              <div class="metric-row">
+                <span>4.8</span>
+                <span>리뷰 2.4만</span>
+                <span>댓글 642</span>
+              </div>
+              <button class="purchase-button" type="button" data-product="세미매트 스킨 쿠션" data-price="32,000원">
+                바로 구매
+              </button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-media">
+              <div class="product-visual premium lip"></div>
+              <span class="badge">유나립 추천</span>
+            </div>
+            <div class="product-body">
+              <span class="tag">립 틴트</span>
+              <h3>무드 글레이즈 틴트</h3>
+              <p>맑게 올라오는 컬러와 촉촉한 광택감으로 저장 수가 빠르게 오른 립 틴트입니다.</p>
+              <div class="metric-row">
+                <span>4.9</span>
+                <span>저장 4.2만</span>
+                <span>댓글 1,024</span>
+              </div>
+              <button class="purchase-button" type="button" data-product="무드 글레이즈 틴트" data-price="17,900원">
+                바로 구매
+              </button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-media">
+              <div class="product-visual premium mascara"></div>
+              <span class="badge green">민지룸 추천</span>
+            </div>
+            <div class="product-body">
+              <span class="tag">마스카라</span>
+              <h3>래쉬 픽싱 마스카라</h3>
+              <p>번짐이 적고 컬 고정력이 좋다는 리뷰가 많은 데일리 아이템입니다.</p>
+              <div class="metric-row">
+                <span>4.7</span>
+                <span>리뷰 8,900</span>
+                <span>재구매 72%</span>
+              </div>
+              <button class="purchase-button" type="button" data-product="래쉬 픽싱 마스카라" data-price="16,000원">
+                바로 구매
+              </button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-media">
+              <div class="product-visual premium serum"></div>
+              <span class="badge">리나쌤 추천</span>
+            </div>
+            <div class="product-body">
+              <span class="tag">장벽 케어</span>
+              <h3>배리어 세럼 팝</h3>
+              <p>민감하고 붉어지기 쉬운 피부를 위한 전문가 추천 세럼입니다.</p>
+              <div class="metric-row">
+                <span>4.9</span>
+                <span>리뷰 3.1만</span>
+                <span>디토 98</span>
+              </div>
+              <button class="purchase-button" type="button" data-product="배리어 세럼 팝" data-price="29,900원">
+                바로 구매
+              </button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-media">
+              <div class="product-visual premium pad"></div>
+              <span class="badge green">소이로그 추천</span>
+            </div>
+            <div class="product-body">
+              <span class="tag">토너패드</span>
+              <h3>카밍 클라우드 토너패드</h3>
+              <p>복합성 피부 유저가 자극이 적다고 많이 남긴 첫 단계 패드입니다.</p>
+              <div class="metric-row">
+                <span>4.8</span>
+                <span>리뷰 2.1만</span>
+                <span>재구매 76%</span>
+              </div>
+              <button class="purchase-button" type="button" data-product="카밍 클라우드 토너패드" data-price="24,900원">
+                바로 구매
+              </button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-media">
+              <div class="product-visual premium hair"></div>
+              <span class="badge coral">노아헤어 추천</span>
+            </div>
+            <div class="product-body">
+              <span class="tag">헤어 케어</span>
+              <h3>실키 리페어 헤어오일</h3>
+              <p>부스스한 모발을 차분하게 잡아줘 향수 대신 쓰는 유저도 많은 헤어오일입니다.</p>
+              <div class="metric-row">
+                <span>4.8</span>
+                <span>리뷰 1.1만</span>
+                <span>재구매 79%</span>
+              </div>
+              <button class="purchase-button" type="button" data-product="실키 리페어 헤어오일" data-price="21,000원">
+                바로 구매
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="feed" class="feed-section" aria-labelledby="feed-title">
+        <div class="section-heading">
+          <p class="eyebrow">소통 피드</p>
+          <h2 id="feed-title">인플루언서와 유저가 바로 묻고 답하는 뷰티 피드</h2>
+          <p>
+            단순 리뷰가 아니라 팔로우, 댓글, 답글, 구매 질문이 오가는 SNS형 피드입니다.
+          </p>
+        </div>
+        <div class="feed-layout">
+          <article class="post-card">
+            <div class="post-head">
+              <span class="avatar expert">하루</span>
+              <div>
+                <h3>하루뷰티</h3>
+                <p>팔로워 48.2만 · 베이스 메이크업</p>
+              </div>
+              <button class="follow-button" type="button">팔로우</button>
+            </div>
+            <div class="post-image soft-pink">
+              <div class="product-visual premium cushion"></div>
+            </div>
+            <p>
+              세미매트 쿠션인데 건조하게 갈라지지 않아서 좋아요.
+              오후에 올라오는 윤기가 오히려 피부 좋아 보이는 타입입니다.
+            </p>
+            <div class="post-stats">
+              <span>좋아요 1.8만</span>
+              <span>댓글 642</span>
+              <span>공유 318</span>
+            </div>
+            <div class="comment-list">
+              <div class="comment-item">
+                <p><strong>지우</strong> 21호도 너무 밝지 않나요?</p>
+                <button type="button" class="comment-delete" aria-label="댓글 삭제">삭제</button>
+              </div>
+              <div class="comment-item">
+                <p><strong>하루뷰티</strong> 21호는 살짝 뉴트럴해서 평소 21호 쓰면 무난해요.</p>
+                <button type="button" class="comment-delete" aria-label="댓글 삭제">삭제</button>
+              </div>
+            </div>
+            <form class="reply-form">
+              <input type="text" placeholder="하루뷰티에게 질문 남기기" />
+              <button type="submit">등록</button>
+            </form>
+            <div class="post-actions">
+              <button type="button" class="like-button">좋아요</button>
+              <button type="button" data-product="세미매트 스킨 쿠션" data-price="32,000원">리뷰템 구매</button>
+            </div>
+          </article>
+
+          <article class="post-card tall">
+            <div class="post-head">
+              <span class="avatar blue">유나</span>
+              <div>
+                <h3>유나립</h3>
+                <p>팔로워 31.7만 · 립 컬렉터</p>
+              </div>
+              <button class="follow-button" type="button">팔로우</button>
+            </div>
+            <div class="post-image mint">
+              <div class="product-visual premium lip"></div>
+            </div>
+            <p>
+              무드 글레이즈 틴트는 입술 각질이 부각되지 않아서 좋았어요.
+              생얼에도 뜨지 않는 컬러라 데일리로 계속 손이 갑니다.
+            </p>
+            <div class="post-stats">
+              <span>좋아요 2.3만</span>
+              <span>댓글 1,024</span>
+              <span>저장 4.2만</span>
+            </div>
+            <div class="comment-list">
+              <div class="comment-item">
+                <p><strong>민서</strong> 봄웜도 괜찮을까요?</p>
+                <button type="button" class="comment-delete" aria-label="댓글 삭제">삭제</button>
+              </div>
+              <div class="comment-item">
+                <p><strong>유나립</strong> 02 코랄무드 추천해요. 얼굴이 확 밝아져요.</p>
+                <button type="button" class="comment-delete" aria-label="댓글 삭제">삭제</button>
+              </div>
+            </div>
+            <form class="reply-form">
+              <input type="text" placeholder="유나립에게 댓글 달기" />
+              <button type="submit">등록</button>
+            </form>
+            <div class="post-actions">
+              <button type="button" class="like-button">좋아요</button>
+              <button type="button" data-product="무드 글레이즈 틴트" data-price="17,900원">리뷰템 구매</button>
+            </div>
+          </article>
+
+          <article class="post-card">
+            <div class="post-head">
+              <span class="avatar green">리나</span>
+              <div>
+                <h3>리나쌤</h3>
+                <p>팔로워 22.5만 · 피부 상담</p>
+              </div>
+              <button class="follow-button" type="button">팔로우</button>
+            </div>
+            <div class="post-image blue">
+              <div class="product-visual premium serum"></div>
+            </div>
+            <p>
+              장벽 케어 성분 구성이 안정적이고 향이 강하지 않아 민감 피부가 시도해보기 좋아요.
+              처음에는 소량부터 사용해보세요.
+            </p>
+            <div class="post-stats">
+              <span>좋아요 9,800</span>
+              <span>댓글 387</span>
+              <span>전문가 답변 42</span>
+            </div>
+            <div class="comment-list">
+              <div class="comment-item">
+                <p><strong>예린</strong> 레티놀 쓰는 날 같이 써도 되나요?</p>
+                <button type="button" class="comment-delete" aria-label="댓글 삭제">삭제</button>
+              </div>
+              <div class="comment-item">
+                <p><strong>리나쌤</strong> 같은 날 써도 되지만 처음엔 격일 사용을 추천해요.</p>
+                <button type="button" class="comment-delete" aria-label="댓글 삭제">삭제</button>
+              </div>
+            </div>
+            <form class="reply-form">
+              <input type="text" placeholder="리나쌤에게 질문하기" />
+              <button type="submit">등록</button>
+            </form>
+            <div class="post-actions">
+              <button type="button" class="like-button">좋아요</button>
+              <button type="button" data-product="배리어 세럼 팝" data-price="29,900원">리뷰템 구매</button>
+            </div>
+          </article>
+
+          <article class="post-card">
+            <div class="post-head">
+              <span class="avatar">민지</span>
+              <div>
+                <h3>민지룸</h3>
+                <p>팔로워 18.9만 · 출근 메이크업</p>
+              </div>
+              <button class="follow-button" type="button">팔로우</button>
+            </div>
+            <div class="post-image soft-pink">
+              <div class="product-visual premium mascara"></div>
+            </div>
+            <p>
+              래쉬 픽싱 마스카라는 지하철 타고 출근해도 눈 밑 번짐이 적었어요.
+              클렌징도 생각보다 어렵지 않아서 재구매할 것 같아요.
+            </p>
+            <div class="post-stats">
+              <span>좋아요 7,600</span>
+              <span>댓글 214</span>
+              <span>구매 인증 1,130</span>
+            </div>
+            <div class="comment-list">
+              <div class="comment-item">
+                <p><strong>나경</strong> 언더에도 바르기 괜찮나요?</p>
+                <button type="button" class="comment-delete" aria-label="댓글 삭제">삭제</button>
+              </div>
+              <div class="comment-item">
+                <p><strong>민지룸</strong> 양 조절만 하면 괜찮아요. 브러시 끝으로 살짝만 추천!</p>
+                <button type="button" class="comment-delete" aria-label="댓글 삭제">삭제</button>
+              </div>
+            </div>
+            <form class="reply-form">
+              <input type="text" placeholder="민지룸에게 댓글 달기" />
+              <button type="submit">등록</button>
+            </form>
+            <div class="post-actions">
+              <button type="button" class="like-button">좋아요</button>
+              <button type="button" data-product="래쉬 픽싱 마스카라" data-price="16,000원">리뷰템 구매</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="ranking" class="content-section split-layout" aria-labelledby="ranking-title">
+        <div class="section-heading sticky-copy">
+          <p class="eyebrow">실시간 랭킹</p>
+          <h2 id="ranking-title">댓글 반응까지 반영한 뷰티 랭킹</h2>
+          <p>
+            좋아요, 댓글, 인플루언서 답변, 실제 구매 버튼 클릭 데이터를 함께 반영해
+            지금 반응 좋은 상품을 보여줍니다.
+          </p>
+        </div>
+        <div class="ranking-list">
+          <article class="rank-item">
+            <span class="rank-number">01</span>
+            <div class="product-visual premium cushion"></div>
+            <div class="rank-copy">
+              <span class="tag hot">베이스 인기 1위</span>
+              <h3>세미매트 스킨 쿠션</h3>
+              <p>무너짐이 예쁘고 커버가 자연스럽다는 후기가 많은 쿠션입니다.</p>
+              <div class="metric-row">
+                <span>4.8</span>
+                <span>댓글 642</span>
+                <span>저장 5.1만</span>
+              </div>
+            </div>
+            <button class="rank-buy" type="button" data-product="세미매트 스킨 쿠션" data-price="32,000원">구매</button>
+          </article>
+
+          <article class="rank-item">
+            <span class="rank-number">02</span>
+            <div class="product-visual premium lip"></div>
+            <div class="rank-copy">
+              <span class="tag">립 틴트</span>
+              <h3>무드 글레이즈 틴트</h3>
+              <p>맑은 발색과 촉촉한 광택감으로 데일리 립 랭킹 상위권입니다.</p>
+              <div class="metric-row">
+                <span>4.9</span>
+                <span>댓글 1,024</span>
+                <span>저장 4.2만</span>
+              </div>
+            </div>
+            <button class="rank-buy" type="button" data-product="무드 글레이즈 틴트" data-price="17,900원">구매</button>
+          </article>
+
+          <article class="rank-item">
+            <span class="rank-number">03</span>
+            <div class="product-visual premium serum"></div>
+            <div class="rank-copy">
+              <span class="tag">장벽 케어</span>
+              <h3>배리어 세럼 팝</h3>
+              <p>민감 피부 유저의 재구매 의사가 높고 전문가 답변이 활발한 세럼입니다.</p>
+              <div class="metric-row">
+                <span>4.9</span>
+                <span>전문가 답변 42</span>
+                <span>재구매 81%</span>
+              </div>
+            </div>
+            <button class="rank-buy" type="button" data-product="배리어 세럼 팝" data-price="29,900원">구매</button>
+          </article>
+
+          <article class="rank-item">
+            <span class="rank-number">04</span>
+            <div class="product-visual premium mascara"></div>
+            <div class="rank-copy">
+              <span class="tag">아이 메이크업</span>
+              <h3>래쉬 픽싱 마스카라</h3>
+              <p>컬 고정력과 번짐 적은 사용감으로 출근 메이크업 유저에게 인기입니다.</p>
+              <div class="metric-row">
+                <span>4.7</span>
+                <span>댓글 214</span>
+                <span>재구매 72%</span>
+              </div>
+            </div>
+            <button class="rank-buy" type="button" data-product="래쉬 픽싱 마스카라" data-price="16,000원">구매</button>
+          </article>
+
+          <article class="rank-item">
+            <span class="rank-number">05</span>
+            <div class="product-visual premium hair"></div>
+            <div class="rank-copy">
+              <span class="tag">헤어 케어</span>
+              <h3>실키 리페어 헤어오일</h3>
+              <p>향과 마무리감이 좋아 선물용으로도 많이 저장되는 헤어오일입니다.</p>
+              <div class="metric-row">
+                <span>4.8</span>
+                <span>리뷰 1.1만</span>
+                <span>재구매 79%</span>
+              </div>
+            </div>
+            <button class="rank-buy" type="button" data-product="실키 리페어 헤어오일" data-price="21,000원">구매</button>
+          </article>
+        </div>
+      </section>
+
+      <section id="checkout" class="checkout-section" aria-labelledby="checkout-title">
+        <div class="checkout-copy">
+          <p class="eyebrow">원터치 구매</p>
+          <h2 id="checkout-title">고르고, 확인하고, 바로 구매.</h2>
+          <p>
+            인플루언서 리뷰, 댓글 반응, 가격 정보를 확인한 뒤
+            복잡한 이동 없이 바로 결제할 수 있는 흐름입니다.
+          </p>
+        </div>
+        <aside class="checkout-card" aria-live="polite">
+          <div class="checkout-product">
+            <div class="product-visual premium cushion" id="checkoutVisual"></div>
+            <div>
+              <span class="tag hot" id="checkoutBadge">바로 구매 가능</span>
+              <h3 id="checkoutProduct">세미매트 스킨 쿠션</h3>
+              <p id="checkoutMeta">하루뷰티 추천 - 평점 4.8 - 댓글 반응 활발</p>
+            </div>
+          </div>
+          <div class="pay-row">
+            <span>결제 금액</span>
+            <strong id="checkoutPrice">32,000원</strong>
+          </div>
+          <button class="pay-button" type="button" id="payButton">원터치로 구매하기</button>
+          <p class="checkout-note" id="checkoutNote">매장 픽업 또는 오늘 도착 뷰티 파우치 배송을 선택할 수 있어요.</p>
+        </aside>
+      </section>
+    </main>
+
+    <div class="toast" role="status" aria-live="polite"></div>
+
+    <footer class="mobile-tabbar" aria-label="모바일 내비게이션">
+      <a href="#expert" class="active">추천</a>
+      <a href="#feed">피드</a>
+      <a href="#ranking">랭킹</a>
+      <a href="#checkout">구매</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
